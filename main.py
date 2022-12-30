@@ -15,4 +15,25 @@ while True:
     numeric_grade = float(input('Enter grade percentage'))
     letter_grade = numeric_grade_to_letter_grade(numeric_grade)
     print(letter_grade)
+    break
+
+# age grade code / home work
+def age_grades_chcild_teens_adults_centenarian (age) :
+    if age <= 12:
+        age_grade = 'Child'
+    elif age <= 18:
+        age_grade = 'Teen'
+    elif age <= 99:
+        age_grade = 'Adult'
+    else:
+        age_grade = 'centenarian'
+    return age_grade
+while True:
+    age = float(input('Enter your age'))
+    age_grade =age_grades_chcild_teens_adults_centenarian(age)
+    print(age_grade)
+    break
+
+
+
 
