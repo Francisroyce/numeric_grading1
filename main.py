@@ -1,5 +1,5 @@
-#If statement (mumeric_grading)
-def numeric_grade_to_letter_grade(numeric_grade) :
+# If statement (mumeric_grading)
+def numeric_grade_to_letter_grade(numeric_grade):
     if numeric_grade >= 90:
         letter_grade = 'A'
     elif numeric_grade >= 80:
@@ -65,7 +65,7 @@ beatles = ['francis', 'royce', 'blessing' 'anointed']
 for i, member in enumerate(beatles):
     print('member (count) - (name)'.format (count=member, name=i))
 
-for_else.py
+# for_else.py
 
 for n in  [2, 4, 8, 22, 88, 1000]:
     if n % 2 != 0:
@@ -74,5 +74,28 @@ for n in  [2, 4, 8, 22, 88, 1000]:
     else:
         print('no odd number found')
 
+execute
+exec function
+exec('print("hello world")')
 
+for n in (0, 1, 2, 3, 4, 5,):
+    print(n*n)
 
+exec('for n in (0, 1, 2, 3, 4, 5): print(n*n)')
+
+# iterable object
+print('one')
+list = [1, 2,3]
+iterable = iter(list)
+print(iterable.__next__())
+print(iterable.__next__())
+print(iterable.__next__())
+
+print('two')
+iterable = iter(list)
+for items in iterable:
+    print(items)
+
+print('three')
+for items in list:
+    print(items)
