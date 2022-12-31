@@ -49,7 +49,7 @@ for x in range(10) :
 
 #the break keyword ('for' loop)
 for n in range (1, 100):
-    for x in range (2, n): #if 1 is chosen, 1 will be printed throughout cos 1 is a factor of all the numbers
+    for x in range (2, n): # if 1 is chosen, 1 will be printed throughout cos 1 is a factor of all the numbers
         if n % x == 0:
             print(n, 'has factor:', x)
             break
@@ -74,8 +74,8 @@ for n in  [2, 4, 8, 22, 88, 1000]:
     else:
         print('no odd number found')
 
-execute
-exec function
+# execute
+# exec function
 exec('print("hello world")')
 
 for n in (0, 1, 2, 3, 4, 5,):
@@ -99,3 +99,35 @@ for items in iterable:
 print('three')
 for items in list:
     print(items)
+
+exception
+zeroDivisonOnError
+while True:
+    try:
+         x = int (input('Please enter a number:\n'))
+         break
+    except ValueError:
+        print('oops! that was no valid number.  Try again...')
+# # try statement may have more than one except clause
+import sys
+try:
+    f = open('myfile.txt')
+    s = f.readline()
+    i = int (s.strip())
+except IOError as err:
+    print('I/O error: {0}'.format(err))
+except ValueError:
+    print('could not convert data to an integer.')
+except:
+    print('unexpected error:', sys.exc_info()[0])
+    raise
+
+for arg in sys.argv[1:]:
+    try:
+        f = open(arg, 'r')
+    except IOError:
+        print('cannot open', arg)
+    else:
+        print(arg, 'has', len(f.readline()), 'lines')
+        f.close()
+
