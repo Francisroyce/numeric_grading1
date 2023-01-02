@@ -130,4 +130,67 @@ for arg in sys.argv[1:]:
     else:
         print(arg, 'has', len(f.readline()), 'lines')
         f.close()
+# Data types
+print(type(1))
+print(type(1.0))
+import fractions
+print(type(fractions.Fraction(1, 2)))
+print(type(1/2))
+print(type(1j))
+print(type('cool'))
+print(type(True))
+print(type([]))
+print(type(()))
+print(type({}))
+print(type(set([])))
+print(type(fractions))
+print(type(int(3.14)))
+print(type(None))
+print(isinstance(1, int))
+print(isinstance(1.0, int))
+print(isinstance(1, float))   #etc
+import fractions
+# numbers
+import math
+print(math.pi)
+print(2*3)
+print(2**3)
+print(math.sqrt(10))
+print(math.floor(math.pi))
+print(math.ceil(math.pi))
+print(math.exp(1))
+print(math.log(math.e))
+print(math.log10(100))
+print(math.pow(10, 3))
+print(math.sin(math.pi/6))
+print(math.cos(math.radians(60)))
 
+print(0x2A)
+print(int('42'))
+print(float(42), int(2.6))
+print(0x0 << 3)
+
+fraction1 = fractions.Fraction(1, 2)
+fraction2 = fractions.Fraction(11, 20)
+fraction3 = fraction1 + fraction2
+print(fraction3)
+print(float(fraction3))
+print(1j * (3 + 4j))
+print(1j * 3 + 4j)
+
+import random
+print(random.random())
+print(random.random)
+print(0x0000025B38DA5D30)
+
+import random
+print(random.randint(1, 1000))
+
+import decimal
+decimal1 = decimal.Decimal('3.14')
+print(decimal1)
+
+print(True + False)
+print(1/0) #undefined
+
+# numerical operations next
