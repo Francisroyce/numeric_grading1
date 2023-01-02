@@ -193,4 +193,4 @@ print(decimal1)
 print(True + False)
 print(1/0) #undefined
 
-# numerical operations next
+# numerical operations next topic
