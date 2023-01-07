@@ -280,3 +280,44 @@ y = 2
 x, y = y, x
 print(x, y)
 
+# strings
+print('to seek the "holy grail"')
+print("to seek the \"holy grail\"")
+print("'tis but a scratch")
+print(b'a\x62c')
+print('hello\nworld')
+print(str(42))
+print(r'hello\nworld')
+print("spam!\n" * 5)
+
+# string operation
+print('abcd' + 'efgh')
+print('abcdefgh'[0])
+print('abcdefgh'[-1])
+print('abcdefgh'[2:])
+print('abcdefgh'[:2])
+print('abcdefgh'[1:2])
+print(len('abcdefgh'))
+print('abc'.join('def'))
+print('{0}, {1}'.format('a', 1))
+print('{:,}'.format(1234567890))
+print('abc'.capitalize())
+print('abc  '.strip())
+print('abc'.upper())
+print('abc'.find('b'))
+print('abc' > 'ABC')
+print('abcd'.replace('bc', 'z'))
+print('aaa*bbb*ccc*ddd'.split('*'))
+print('spam'.isalpha())
+print('%s, eggs, and %s!'% ('spam', 'spam'))
+print('{0}, {1}, and {0}!'.format('spam', 'eggs'))
+print('{:,.2f}'.format(1000000.0))
+print('abcdef'.index('c'))
+print('spam'.encode('utf8'))
+print('spam'.encode('utf16'))
+print(dir(str))
+print('xxx', 'yyy')
+print('''
+xxx
+yyy
+zzz''')
